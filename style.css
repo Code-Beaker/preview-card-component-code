@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --font-title: "Big Shoulders Display", cursive;
+  --font-body: "Lexend Deca", sans-serif;
+
+  --size-body: 15px;
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --darker-cyan: hsl(179, 100%, 13%);
+
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+}
+
+p,
+button,
+a {
+  font-family: var(--font-body);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  padding: 30px;
+}
+
+.item {
+  min-width: 250px;
+  min-height: 400px;
+  padding: 40px;
+  color: var(--light-gray);
+  position: relative;
+}
+
+.item h1 {
+  font-size: 2.25rem;
+}
+
+.item p {
+  font-size: var(--size-body);
+  margin: 20px auto;
+}
+
+.item:first-child {
+  background: var(--bright-orange);
+}
+.item:nth-child(2) {
+  background: var(--dark-cyan);
+}
+.item:last-child {
+  background: var(--darker-cyan);
+}
+
+/* button */
+.button {
+  position: absolute;
+  bottom: 10%;
+  text-decoration: none;
+  /* color: var(--bright-orange); */
+  background: var(--light-gray);
+  border-radius: 30px;
+  padding: 12px 24px;
+}
