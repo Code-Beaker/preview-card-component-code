@@ -71,7 +71,7 @@ a {
   position: absolute;
   bottom: 10%;
   text-decoration: none;
-  /* color: var(--bright-orange); */
+  color: var(--bright-orange);
   background: var(--light-gray);
   border-radius: 30px;
   padding: 12px 24px;
