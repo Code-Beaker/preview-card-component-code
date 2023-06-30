@@ -32,11 +32,18 @@ a {
   font-family: var(--font-body);
 }
 
+.container {
+  position: relative;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
   max-width: 800px;
   padding: 30px;
+  inset: 0;
+  margin: auto;
+  transition: 200ms ease;
 }
 
 .item {
@@ -71,8 +78,33 @@ a {
   position: absolute;
   bottom: 10%;
   text-decoration: none;
-  color: var(--bright-orange);
+  /* color: var(--bright-orange); */
   background: var(--light-gray);
   border-radius: 30px;
   padding: 12px 24px;
+  border: 1px solid transparent;
+  transition: 200ms ease-out;
+}
+
+.button-sedans {
+  color: var(--bright-orange);
+}
+.button-suvs {
+  color: var(--dark-cyan);
+}
+.button-luxury {
+  color: var(--darker-cyan);
+}
+
+.button:hover {
+  color: var(--trans-white);
+  border: 1px solid var(--trans-white);
+  background: transparent;
+}
+
+@media (max-width: 875px) {
+  .wrapper {
+    flex-direction: column;
+    max-width: 400px;
+  }
 }
